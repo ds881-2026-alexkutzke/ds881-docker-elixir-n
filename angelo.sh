@@ -1,6 +1,6 @@
 #chmod +x angelo.sh
 #./angelo.sh
-docker build -t api-elixir:v1 -f angelo.Dockerfile .
+docker build -t api-elixir:v2 -f angelo.Dockerfile .
 docker run --rm -p 8080:8080 -d --name container-angelo api-elixir:v1
 
 echo "Aguardando o servidor subir..."
